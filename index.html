@@ -107,12 +107,9 @@ text-underline-offset:4px;
 
 }
 
-.hero{
-
-max-width:760px;
-
-padding:60px 0 50px;
-
+.hero {
+  max-width: 850px;
+  padding: 60px 0 55px;
 }
 
 .hero h1{
@@ -131,16 +128,11 @@ letter-spacing:-5px;
 
 }
 
-.hero p{
-
-font-family:Georgia,serif;
-
-font-size:28px;
-
-line-height:1.45;
-
-margin:0 0 22px;
-
+.hero p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
 }
 
 .hero .small{
@@ -215,18 +207,12 @@ flex-direction:column;
 
 }
 
-.story img{
-
-width:100%;
-
-aspect-ratio:4/5;
-
-object-fit:contain;
-
-background:white;
-
-margin-bottom:20px;
-
+.story img {
+  width: 88%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .story h3{
@@ -253,21 +239,26 @@ line-height:1.5;
 
 }
 
-.story a{
-
-width:fit-content;
-
-margin-top:auto;
-
-font-family:Georgia,serif;
-
-text-decoration:none;
-
+.story a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 16px;
+  margin-top: auto;
+  border: 1px solid #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
 }
 
-.story a:hover{
-
-text-decoration:underline;
+.story a:hover {
+  background: #111;
+  color: #fff;
+  text-decoration: none;
 
 }
 
@@ -335,34 +326,19 @@ grid-template-columns:1fr;
 
 <div class="hero">
 
-<h1>Work</h1>
-
 <p>
-
-Reporting from The Associated Press,
-
+A sample of my work published in
 <em>The New Yorker</em>,
-
+<em>The Associated Press</em>,
 Gothamist,
-
 <em>The Village Voice</em>,
-
-and elsewhere.
-
-</p>
-
-<p class="small">
-
-For my latest work at The Associated Press,
-
-visit my
-
-<a href="https://apnews.com/author/jake-offenhartz">
-
-AP author page
-
-</a>.
-
+Complex and elsewhere.
+My most recent AP stories are
+<a
+href="https://apnews.com/author/jake-offenhartz"
+target="_blank"
+rel="noopener"
+>here</a>.
 </p>
 
 </div>
@@ -475,7 +451,7 @@ Read at <em>The New Yorker</em> →
 <article class="story">
 
 <img
-src="mamdani.webp"
+src="Mamdani.webp"
 alt="Illustration for Mamdani Family Values"
 >
 
