@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Offenhartz — About</title>
+
+  <style>
+    :root {
+      --background: #faf9f5;
+      --text: #111;
+      --rule: #d7d5cf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1450px, calc(100% - 64px));
+      margin: auto;
+      padding-bottom: 120px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    header h2 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-family: Georgia, serif;
+      font-size: 17px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 1px;
+    }
+
+    .about-main {
+      display: grid;
+      grid-template-columns: minmax(0, 680px) minmax(340px, 550px);
+      justify-content: center;
+      align-items: start;
+      gap: 84px;
+      padding: 68px 30px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .portrait {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .bio {
+      padding-top: 3px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.55;
+    }
+
+    .bio h1 {
+      margin: 0 0 4px;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .role {
+      margin-bottom: 30px !important;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .bio p {
+      margin: 0 0 27px;
+    }
+
+    .contact {
+      margin-top: 31px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .email {
+      margin-bottom: 20px;
+    }
+
+    .email strong {
+      display: inline;
+      margin-right: 4px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .contact a {
+      text-underline-offset: 3px;
+    }
+
+    .socials {
+      display: grid;
+      gap: 12px;
+    }
+
+    .social-row {
+      display: grid;
+      grid-template-columns: 28px auto;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .social-mark.instagram {
+      border: 1.5px solid currentColor;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+
+    .social-mark.linkedin {
+      border-radius: 2px;
+      background: #111;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1100px) {
+      .about-main {
+        grid-template-columns: minmax(0, 680px);
+        gap: 42px;
+      }
+
+      .bio {
+        max-width: 680px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .page {
+        width: min(100% - 30px, 1450px);
+      }
+
+      .about-main {
+        gap: 32px;
+        padding: 42px 0 50px;
+      }
+
+      .bio {
+        font-size: 17px;
+      }
+
+      .bio p {
+        margin-bottom: 23px;
+      }
+    }
+
+    @media (min-width: 1001px) {
+      .page {
+        padding-bottom: 84px;
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      header h2 {
+        font-size: 22px;
+      }
+
+      nav {
+        gap: 19px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h2>Jake Offenhartz</h2>
+
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Work</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </header>
+
+    <main class="about-main">
+      <img
+        class="portrait"
+        src="about-jake-offenhartz.webp"
+        alt="Portrait of Jake Offenhartz"
+      >
+
+      <div class="bio">
+        <h1>Jake Offenhartz</h1>
+
+        <p class="role">Writer / Reporter</p>
+
+        <p>
+          Hi. I’m Jake, a reporter and writer based in New York City. I cover law enforcement and other topics for The Associated Press. I also sometimes write for <em>The New Yorker</em>.
+        </p>
+
+        <p>
+          Before joining the AP, I worked at Gothamist and WNYC, where I wrote stories and made radio about nearly every facet of life in New York City. My work has also appeared in <em>New York</em> magazine, <em>The Village Voice</em>, <em>The Nation</em>, <em>Complex</em>, <em>The Awl</em> and elsewhere.
+        </p>
+
+        <p>
+          I’ll be spending the 2026-2027 academic year as a <a href="https://nieman.harvard.edu/class-of-2027/" target="_blank" rel="noopener">Nieman fellow at Harvard</a>, studying the shifting nature of mass movements and government repression.
+        </p>
+
+        <p>
+          When I’m not reporting, I enjoy pickup basketball, surfing at Rockaway Beach and talking to strangers.
+        </p>
+
+        <div class="contact">
+          <div class="email">
+            <strong>Get in touch:</strong>
+            <a href="mailto:offenhartzjake@gmail.com">offenhartzjake@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
