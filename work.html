@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Jake Offenhartz — Work
+</title>
+
+<style>
+
+:root {
+
+--background:#faf9f5;
+--text:#111;
+--muted:#555;
+--rule:#d7d5cf;
+
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+
+margin:0;
+
+background:var(--background);
+
+color:var(--text);
+
+font-family:Arial,Helvetica,sans-serif;
+
+}
+
+a{
+
+color:inherit;
+
+}
+
+.page{
+
+width:min(1450px,calc(100% - 64px));
+
+margin:auto;
+
+padding-bottom:120px;
+
+}
+
+header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:30px 0;
+
+border-bottom:1px solid var(--rule);
+
+}
+
+header h2{
+
+margin:0;
+
+font-family:Georgia,serif;
+
+font-size:28px;
+
+font-weight:400;
+
+}
+
+nav{
+
+display:flex;
+
+gap:28px;
+
+font-family:Georgia,serif;
+
+font-size:17px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+}
+
+nav a:hover{
+
+text-decoration:underline;
+
+text-underline-offset:4px;
+
+}
+
+nav a[aria-current="page"]{
+
+text-decoration:underline;
+
+text-underline-offset:4px;
+
+}
+
+.hero {
+  padding: 60px 0 55px;
+}
+
+.hero h1{
+
+margin:0 0 24px;
+
+font-family:Georgia,serif;
+
+font-weight:400;
+
+font-size:120px;
+
+line-height:.85;
+
+letter-spacing:-5px;
+
+}
+
+.hero p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 1.2vw, 19px);
+  line-height: 1.6;
+}
+
+.hero .small{
+
+font-family:Arial,sans-serif;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
+
+section{
+
+border-top:1px solid var(--rule);
+
+padding-top:45px;
+
+margin-top:35px;
+
+}
+
+.section-title{
+
+margin-bottom:40px;
+
+max-width:620px;
+
+}
+
+.section-title h2{
+
+margin:0 0 10px;
+
+font-family:Georgia,serif;
+
+font-size:52px;
+
+font-weight:400;
+
+}
+
+.section-title p{
+
+margin:0;
+
+font-family:Georgia,serif;
+
+font-size:18px;
+
+font-style:italic;
+
+line-height:1.5;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:34px;
+
+}
+
+.story{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.story img {
+  width: 88%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.story h3{
+
+margin:0 0 12px;
+
+font-family:Georgia,serif;
+
+font-size:27px;
+
+font-weight:400;
+
+line-height:1.08;
+
+}
+
+.story p{
+
+margin:0 0 18px;
+
+font-size:16px;
+
+line-height:1.5;
+
+}
+
+.story a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 16px;
+  margin-top: auto;
+  border: 1px solid #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.story a:hover {
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+@media(max-width:1000px){
+
+.grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:650px){
+
+.page{
+
+width:min(100% - 30px,1450px);
+
+}
+
+.hero h1{
+
+font-size:74px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+.ap-grid .story img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 20px;
+}
+
+.ap-grid .story h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  .ap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .ap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1001px) {
+  .page {
+    padding-bottom: 84px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  nav {
+    gap: 19px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 40px 0 36px;
+  }
+
+  .hero p {
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+
+  section {
+    padding-top: 30px;
+    margin-top: 23px;
+  }
+
+  .section-title {
+    margin-bottom: 26px;
+  }
+
+  .section-title h2 {
+    margin-bottom: 7px;
+    font-size: 37px;
+  }
+
+  .grid {
+    gap: 23px;
+  }
+
+  .story img {
+    width: 64%;
+    margin-bottom: 13px;
+  }
+
+  .story h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  .story p {
+    margin-bottom: 12px;
+    font-size: 12.5px;
+    line-height: 1.42;
+  }
+
+  .story a {
+    min-height: 37px;
+    padding: 8px 11px;
+    font-size: 12.5px;
+  }
+
+  .ap-grid .story img {
+    width: 72%;
+    margin: 0 auto 13px;
+  }
+
+  .ap-grid .story h3 {
+    font-size: 18px;
+  }
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<header>
+
+<h2>Jake Offenhartz</h2>
+
+<nav>
+
+<a href="index.html">About</a>
+
+<a href="work.html" aria-current="page">Work</a>
+
+</nav>
+
+</header>
+
+<div class="hero">
+
+<p>
+A sample of my work published in
+<em>The New Yorker</em>,
+<em>The Associated Press</em>,
+Gothamist,
+<em>The Village Voice</em>,
+Complex and elsewhere.
+My most recent AP stories are
+<a
+href="https://apnews.com/author/jake-offenhartz"
+target="_blank"
+rel="noopener"
+>here</a>.
+</p>
+
+</div>
+
+<section>
+
+<div class="section-title">
+
+<h2>
+
+Talk of the Town
+
+</h2>
+
+</div>
+
+<div class="grid">
+
+  <article class="story">
+
+<img
+src="tagging.webp"
+alt="Illustration for How to Tag a Skyscraper, Six Hundred Feet Up"
+>
+
+<h3>
+How to Tag a Skyscraper, Six Hundred Feet Up
+</h3>
+
+<p>
+Two graffiti writers explain how they reached the tops of New York's tallest buildings.
+</p>
+
+<a
+href="https://www.newyorker.com/magazine/2025/02/03/how-to-tag-a-skyscraper-six-hundred-feet-up"
+target="_blank"
+rel="noopener"
+>
+<span>Read at The New Yorker<span>
+</a>
+
+</article>
+
+
+<article class="story">
+
+<img
+src="clocks.webp"
+alt="Illustration for New York’s Clock Master to City Hall: Time’s Up!"
+>
+
+<h3>
+New York's Clock Master to City Hall: Time's Up!
+</h3>
+
+<p>
+An aging clock master and his slightly younger apprentice fight to keep the time.
+</p>
+
+<a
+href="https://www.newyorker.com/magazine/2024/11/18/new-yorks-clock-master-to-city-hall-times-up"
+target="_blank"
+rel="noopener"
+>
+<span>Read at The New Yorker<span>
+</a>
+
+</article>
+
+
+<article class="story">
+
+<img
+src="gowanus.webp"
+alt="Illustration for Along the Gowanus Canal, Notes of Tar and Manure"
+>
+
+<h3>
+Along the Gowanus Canal, Notes of Tar and Manure
+</h3>
+
+<p>
+A perfume "nose" catalogs the strange odors rising from Brooklyn's most infamous canal.
+</p>
+
+<a
+href="https://www.newyorker.com/magazine/2024/09/02/along-the-gowanus-canal-notes-of-tar-and-manure"
+target="_blank"
+rel="noopener"
+>
+<span>Read at The New Yorker<span>
+</a>
+
+</article>
+
+
+<article class="story">
+
+<img
+src="Mamdani.webp"
+alt="Illustration for Mamdani Family Values"
+>
+
+<h3>
+Mamdani Family Values
+</h3>
+
+<p>
+Zohran Mamdani's father just published his twelfth book. The topic? Dictators.
+</p>
+
+<a
+href="https://www.newyorker.com/magazine/2025/12/08/mamdani-family-values"
+target="_blank"
+rel="noopener"
+>
+<span>Read at The New Yorker<span>
+</a>
+
+</article>
+
+  </div>
+
+  </section>
+
+  <section>
+
+  <div class="section-title">
+
+    <h2>AP Investigations</h2>
+
+  </div>
+
+  <div class="grid ap-grid">
+
+
+    <article class="story">
+
+      <img
+        src="brooklynparade.webp"
+        alt="Camden Lee at his family's apartment in Brooklyn"
+      >
+
+      <h3>
+        A 15-Year-Old Went to a Brooklyn Parade. The NYPD Wrongly Accused Him of a Mass Shooting
+      </h3>
+
+      <p>
+        A teenager's life was upended by a false murder allegation. Why didn't the NYPD correct it?
+      </p>
+
+      <a
+        href="https://apnews.com/article/nypd-west-indian-american-day-parade-shooting-25607a36b4e95224c0f2d36af7816aa2"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Associated Press
+      </a>
+
+    </article>
+
+
+    <article class="story">
+
+      <img
+        src="hardhats.webp"
+        alt="Federal agents detaining a person beside a vehicle in Minneapolis"
+      >
+
+      <h3>
+        Hard Hats and Dummy Plates: ICE Ruses Add to Fears in Minnesota
+      </h3>
+
+      <p>
+        Disguises and deceptions are deepening fear during Trump's immigration crackdown.
+      </p>
+
+      <a
+        href="https://apnews.com/article/immigration-ice-agents-minneapolis-ruse-54ca86155182edceeda68e649b5518f7"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Associated Press
+      </a>
+
+    </article>
+
+
+    <article class="story">
+
+      <img
+        src="leqaa-kordia.webp"
+        alt="Pro-Palestinian protesters gathered with police nearby"
+      >
+
+      <h3>
+        Leqaa Kordia breaks her silence: ‘I feel helpless’
+      </h3>
+
+      <p>
+        The last pro-Palestinian protester still locked up in Trump’s campus crackdown speaks exclusively to the AP.
+      </p>
+
+      <a
+        href="https://apnews.com/article/leqaa-kordia-trump-palestinian-protests-campus-crackdown-ed4bf05659d889a2a9a36e7181786971"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Associated Press
+      </a>
+
+    </article>
+
+
+    <article class="story">
+
+      <img
+        src="landlords.webp"
+        alt="Two residents speaking inside a Bronx apartment"
+      >
+
+      <h3>
+        Zohran Mamdani Wants to Crack Down on Bad Landlords. First He Has to Find Them
+      </h3>
+
+      <p>
+        A maze of LLC is making it harder to trace New York's worst landlords.
+      </p>
+
+      <a
+        href="https://apnews.com/article/zohran-mamdani-landlords-tenants-ea66d6a693c0bae774d4f9abaee58178"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Associated Press
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+
+    <h2>City Life</h2>
+
+  </div>
+
+  <div class="grid ap-grid">
+
+    <article class="story">
+
+      <img
+        src="city-washington-square-park.webp"
+        alt="A fire breather performing in Washington Square Park"
+      >
+
+      <h3>
+        Emails Show How Wealthy Donors Exerted Influence Over Washington Square Park
+      </h3>
+
+      <p>
+        How affluent New Yorkers used a parks conservancy to rein in one of the city's wildest public spaces.
+      </p>
+
+      <a
+        href="https://gothamist.com/news/mission-creep-emails-show-how-wealthy-donors-exerted-influence-over-washington-square-park"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at Gothamist
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="city-lead-poisoning.webp"
+        alt="A mother holding her young son in their apartment"
+      >
+
+      <h3>
+        “That Damn Hole Gave My Son Lead Poisoning”
+      </h3>
+
+      <p>
+        The city claimed no one was harmed by its lead testing failures. So why is Kyan Paige sick?
+      </p>
+
+      <a
+        href="https://www.villagevoice.com/that-damn-hole-gave-my-son-lead-poisoning/"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Village Voice
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="city-nypd-officer.webp"
+        alt="An NYPD vehicle parked outside a Queens cultural center"
+      >
+
+      <h3>
+        The NYPD Accidentally Shot a Fellow Officer. A Queens Man May Spend Life in Prison for His Death
+      </h3>
+
+      <p>
+        An accidental police shooting raises difficult questions about accountability.
+      </p>
+
+      <a
+        href="https://gothamist.com/news/the-nypd-accidentally-shot-a-fellow-officer-a-queens-man-may-spend-life-in-prison-for-his-death"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at Gothamist
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="city-george-santos.webp"
+        alt="George Santos walking past reporters"
+      >
+
+      <h3>
+        Listen: George Santos Eviction Tapes Show Him Begging to Feed Pet Fish, Mulling Public Assistance
+      </h3>
+
+      <p>
+        Recordings uncovered by WNYC capture George Santos' years in housing court.
+      </p>
+
+      <a
+        href="https://gothamist.com/news/listen-george-santos-eviction-tapes-show-him-begging-to-feed-pet-fish-mulling-public-assistance"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at Gothamist / WNYC
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+
+    <h2>Arts &amp; Culture</h2>
+
+  </div>
+
+  <div class="grid ap-grid">
+
+    <article class="story">
+
+      <img
+        src="arts-legs-mcneil.webp"
+        alt="Legs McNeil wearing sunglasses in front of a poster-covered wall"
+      >
+
+      <h3>
+        Legs McNeil Walks Into a Gilmore Girls Book Group
+      </h3>
+
+      <p>
+        The author of <em>Please Kill Me</em> samples wine and cookies with an unlikely fandom.
+      </p>
+
+      <a
+        href="https://www.theawl.com/2016/08/the-punk-rock-gilmore-girls-book-group/"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The Awl
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="arts-curb-alert.webp"
+        alt="Two people sorting discarded materials on a city street"
+      >
+
+      <h3>
+        Curb Alert: Junk-Lugging for Art's Sake
+      </h3>
+
+      <p>
+        Ser Serpas, a trash-art "assemblagist," takes her pick of New York's litter ahead of a new show at MoMA PS1.
+      </p>
+
+      <a
+        href="https://www.newyorker.com/magazine/2025/04/28/curb-alert-junk-lugging-for-arts-sake"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The New Yorker
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="arts-veterans-gaming.webp"
+        alt="A veteran using a computer from a wheelchair beside a hotel bed"
+      >
+
+      <h3>
+        How Video Games Are Helping Young Veterans Cope
+      </h3>
+
+      <p>
+        A generation of veterans suffering from PTSD discovers a new form of escape—and therapy.
+      </p>
+
+      <a
+        href="https://www.complex.com/life/a/jake-offenhartz/veterans-day-millennials-video-games-ptsd"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at Complex
+      </a>
+
+    </article>
+
+    <article class="story">
+
+      <img
+        src="arts-reverend-billy.webp"
+        alt="Reverend Billy speaking outside a JPMorgan Chase building"
+      >
+
+      <h3>
+        Reverend Billy Takes on Norman Foster's New Monolith
+      </h3>
+
+      <p>
+        The street preacher Billy Talen moves from Mickey Mouse effigies to protesting JPMorgan Chase's ties to fossil fuels.
+      </p>
+
+      <a
+        href="https://www.newyorker.com/magazine/2026/05/04/reverend-billy-takes-on-norman-fosters-new-monolith"
+        target="_blank"
+        rel="noopener"
+      >
+        Read at The New Yorker
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
